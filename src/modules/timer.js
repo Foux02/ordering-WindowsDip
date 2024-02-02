@@ -10,11 +10,6 @@ const timer = ({
   const timerMinutes = document.getElementById(timerMinutesId);
   const timerSeconds = document.getElementById(timerSecondsId);
 
-  console.log(timerDays);
-  console.log(timerHours);
-  console.log(timerMinutes);
-  console.log(timerSeconds);
-
   const getTimeRemaining = () => {
     let dateStop = new Date(deadline).getTime();
     let dateNow = new Date().getTime();

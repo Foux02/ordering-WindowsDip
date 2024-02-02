@@ -1,4 +1,4 @@
-import { animate } from './helpers';
+import { animate, regularExpressions } from './helpers';
 const calc = () => {
   const calc = document.getElementById('calc');
 
@@ -53,6 +53,8 @@ const calc = () => {
       calcTotal.value = calcTotalValue;
     }
   };
+
+  regularExpressions();
 
   calc.addEventListener('change', (e) => {
     if (

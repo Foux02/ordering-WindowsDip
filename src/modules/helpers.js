@@ -17,4 +17,12 @@ const animate = ({ timing, draw, duration }) => {
   });
 };
 
-export { animate };
+const regularExpressions = () => {
+  const calcItem = document.getElementById('calc-input');
+
+  calcItem.addEventListener('input', (e) => {
+    e.target.value = e.target.value.replace(/\D+/, '');
+  });
+};
+
+export { animate, regularExpressions };
