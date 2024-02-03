@@ -1,6 +1,6 @@
 const scalePicture = () => {
   console.log('scalePicture');
-
+  /*
   const modal = new ItcModal({
     title: 'Заголовок',
     content: '<div>Содержимое модального окна...</div>',
@@ -10,6 +10,7 @@ const scalePicture = () => {
   });
 
   modal.show();
+  */
 };
 
 export default scalePicture;

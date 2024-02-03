@@ -1,3 +1,4 @@
+import modal from './modules/modal';
 import timer from './modules/timer';
 import calc from './modules/calc';
 import sendForm from './modules/sendForm';
@@ -9,6 +10,17 @@ const balkony = document.getElementById('balkony');
 
 if (okna) {
   console.log('okna');
+  modal({
+    modalClass: '.header-modal',
+    btnOpen: '.btn-block',
+    btnClose: '.header-modal__close',
+  });
+  modal({
+    modalClass: '.services-modal',
+    btnOpen: '.btn-sm',
+    btnClose: '.services-modal__close',
+  });
+
   timer({
     timerDaysId: 'timer-days',
     timerHoursId: 'timer-hours',
@@ -34,6 +46,17 @@ if (okna) {
 
 if (kuhni) {
   console.log('kuhni');
+  modal({
+    modalClass: '.header-modal',
+    btnOpen: '.btn-block',
+    btnClose: '.header-modal__close',
+  });
+  modal({
+    modalClass: '.services-modal',
+    btnOpen: '.btn-sm',
+    btnClose: '.services-modal__close',
+  });
+
   timer({
     timerDaysId: 'timer-days-kuhni',
     timerHoursId: 'timer-hours-kuhni',
@@ -59,6 +82,17 @@ if (kuhni) {
 
 if (balkony) {
   console.log('balkony');
+  modal({
+    modalClass: '.header-modal',
+    btnOpen: '.btn-block',
+    btnClose: '.header-modal__close',
+  });
+  modal({
+    modalClass: '.services-modal',
+    btnOpen: '.btn-sm',
+    btnClose: '.services-modal__close',
+  });
+
   timer({
     timerDaysId: 'timer-days-balkony',
     timerHoursId: 'timer-hours-balkony',
