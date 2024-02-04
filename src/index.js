@@ -1,4 +1,6 @@
+import scroll from './modules/scroll';
 import modal from './modules/modal';
+import slider from './modules/slider';
 import timer from './modules/timer';
 import calc from './modules/calc';
 import sendForm from './modules/sendForm';
@@ -8,8 +10,24 @@ const okna = document.getElementById('okna');
 const kuhni = document.getElementById('kuhni');
 const balkony = document.getElementById('balkony');
 
+scroll();
+
 if (okna) {
   console.log('okna');
+
+  slider({
+    swiperClass: '.swiperBenefits',
+    arrowLeft: '.benefits__arrow--left',
+    arrowRight: '.benefits__arrow--right',
+    numberslide: 3,
+  });
+  slider({
+    swiperClass: '.swiperServices',
+    arrowLeft: '.services__arrow--left',
+    arrowRight: '.services__arrow--right',
+    numberslide: 2,
+  });
+
   modal({
     modalClass: '.header-modal',
     btnOpen: '.btn-block',
@@ -46,6 +64,20 @@ if (okna) {
 
 if (kuhni) {
   console.log('kuhni');
+
+  slider({
+    swiperClass: '.swiperBenefits',
+    arrowLeft: '.benefits__arrow--left',
+    arrowRight: '.benefits__arrow--right',
+    numberslide: 3,
+  });
+  slider({
+    swiperClass: '.swiperServices',
+    arrowLeft: '.services__arrow--left',
+    arrowRight: '.services__arrow--right',
+    numberslide: 2,
+  });
+
   modal({
     modalClass: '.header-modal',
     btnOpen: '.btn-block',
@@ -82,6 +114,20 @@ if (kuhni) {
 
 if (balkony) {
   console.log('balkony');
+
+  slider({
+    swiperClass: '.swiperBenefits',
+    arrowLeft: '.benefits__arrow--left',
+    arrowRight: '.benefits__arrow--right',
+    numberslide: 3,
+  });
+  slider({
+    swiperClass: '.swiperServices',
+    arrowLeft: '.services__arrow--left',
+    arrowRight: '.services__arrow--right',
+    numberslide: 2,
+  });
+
   modal({
     modalClass: '.header-modal',
     btnOpen: '.btn-block',
