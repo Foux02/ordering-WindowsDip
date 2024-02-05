@@ -1,16 +1,21 @@
 const scalePicture = () => {
-  console.log('scalePicture');
-  /*
-  const modal = new ItcModal({
-    title: 'Заголовок',
-    content: '<div>Содержимое модального окна...</div>',
-    footerButtons: [
-      { class: 'btn btn-close', text: 'Закрыть', action: 'close' },
-    ],
+  const sertificateDocAll = document.querySelectorAll('.sertificate-document');
+  const modal = document.getElementById('modal');
+  const modalImage = document.getElementById('modal-image');
+
+  sertificateDocAll.forEach((doc) => {
+    doc.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'block';
+      modalImage.src = e.currentTarget.getAttribute('href');
+    });
   });
 
-  modal.show();
-  */
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal || e.target === modalImage) {
+      modal.style.display = 'none';
+    }
+  });
 };
 
 export default scalePicture;

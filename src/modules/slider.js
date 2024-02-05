@@ -7,6 +7,9 @@ const slider = ({ arrowLeft, arrowRight, numberslide, swiperClass }) => {
 
     loop: true,
 
+    slidesPerView: 1,
+    spaceBetween: 10,
+
     navigation: {
       nextEl: arrowRight,
       prevEl: arrowLeft,

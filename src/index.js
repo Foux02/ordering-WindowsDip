@@ -11,10 +11,9 @@ const kuhni = document.getElementById('kuhni');
 const balkony = document.getElementById('balkony');
 
 scroll();
+scalePicture();
 
 if (okna) {
-  console.log('okna');
-
   slider({
     swiperClass: '.swiperBenefits',
     arrowLeft: '.benefits__arrow--left',
@@ -30,7 +29,7 @@ if (okna) {
 
   modal({
     modalClass: '.header-modal',
-    btnOpen: '.btn-block',
+    btnOpen: '.btn-call',
     btnClose: '.header-modal__close',
   });
   modal({
@@ -63,8 +62,6 @@ if (okna) {
 }
 
 if (kuhni) {
-  console.log('kuhni');
-
   slider({
     swiperClass: '.swiperBenefits',
     arrowLeft: '.benefits__arrow--left',
@@ -80,7 +77,7 @@ if (kuhni) {
 
   modal({
     modalClass: '.header-modal',
-    btnOpen: '.btn-block',
+    btnOpen: '.btn-call',
     btnClose: '.header-modal__close',
   });
   modal({
@@ -113,8 +110,6 @@ if (kuhni) {
 }
 
 if (balkony) {
-  console.log('balkony');
-
   slider({
     swiperClass: '.swiperBenefits',
     arrowLeft: '.benefits__arrow--left',
@@ -130,7 +125,7 @@ if (balkony) {
 
   modal({
     modalClass: '.header-modal',
-    btnOpen: '.btn-block',
+    btnOpen: '.btn-call',
     btnClose: '.header-modal__close',
   });
   modal({
@@ -155,8 +150,6 @@ if (balkony) {
   });
 
   calc();
-
-  scalePicture();
 
   sendForm({
     fornId: 'action-form',

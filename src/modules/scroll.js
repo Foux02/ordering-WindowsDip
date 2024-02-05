@@ -13,14 +13,13 @@ const scroll = () => {
     );
 
     if (lineBenefitsTop === true) {
-      smoothScroll.style.display = '';
+      smoothScroll.style.display = 'block';
     } else {
       smoothScroll.style.display = 'none';
     }
   });
 
   smoothScrollBtn.addEventListener('click', (e) => {
-    console.log('click');
     bodyScroll.scrollIntoView({ top: 0, behavior: 'smooth' });
   });
 };
